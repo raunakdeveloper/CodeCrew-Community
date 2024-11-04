@@ -37,7 +37,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
   };
 
   return (
-    <div>
+    <div className="w-full">
       {/* Role Selection Buttons */}
       <div className="flex bg-richblack-700 p-1 gap-x-1 rounded-full max-w-max mt-6">
         <button
@@ -67,7 +67,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
       {/* Signup Form */}
       <form onSubmit={submitHandler} className="flex flex-col gap-y-4 mt-6">
         {/* First Name and Last Name */}
-        <div className="flex gap-4">
+        <div className="flex flex-col gap-4 sm:flex-row sm:gap-4">
           <label className="w-full">
             <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]">
               First Name <sup className="text-pink-200">*</sup>
@@ -116,7 +116,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
         </label>
 
         {/* Create Password and Confirm Password */}
-        <div className="flex gap-4">
+        <div className="flex flex-col gap-4 sm:flex-row sm:gap-4">
           <label className="w-full relative">
             <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]">
               Create Password <sup className="text-pink-200">*</sup>
@@ -128,7 +128,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
               placeholder="Create Password"
               onChange={changeHandler}
               required
-              className="bg-richblack-700 outline-none rounded-[0.5rem] text-richblack-5 w-full p-[12px] shadow-[0_1px_0_rgba(255,255,255,0.5)]"
+              className="bg-richblack-700 outline-none rounded-[0.5rem] pr-12 text-richblack-5 w-full p-[12px] shadow-[0_1px_0_rgba(255,255,255,0.5)]"
             />
             <span
               onClick={() => setShowCreatePassword(!showCreatePassword)}
@@ -153,7 +153,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
               placeholder="Confirm Password"
               onChange={changeHandler}
               required
-              className="bg-richblack-700 outline-none rounded-[0.5rem] text-richblack-5 w-full p-[12px] shadow-[0_1px_0_rgba(255,255,255,0.5)]"
+              className="bg-richblack-700 outline-none rounded-[0.5rem] pr-12 text-richblack-5 w-full p-[12px] shadow-[0_1px_0_rgba(255,255,255,0.5)]"
             />
             <span
               onClick={() => setShowConfirmPassword(!showConfirmPassword)}

@@ -56,7 +56,7 @@ function LoginForm({ setIsLoggedIn }) {
             placeholder="Enter Password"
             onChange={handleChange}
             name="password"
-            className="bg-richblack-700 outline-none rounded-[0.75rem] w-full p-[12px] text-richblack-5 shadow-[0_1px_0_rgba(255,255,255,0.5)]"
+            className="bg-richblack-700 outline-none rounded-[0.75rem] pr-12 w-full p-[12px] text-richblack-5 shadow-[0_1px_0_rgba(255,255,255,0.5)]"
           />
 
           <span

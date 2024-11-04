@@ -28,7 +28,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
       </div>
 
       {/* Navigation Links */}
-      <ul className="flex gap-x-6 text-richblack-100">
+      <ul className="hidden md:flex gap-x-6 text-richblack-100">
         <li>
           <Link to="/">Home</Link>
         </li>

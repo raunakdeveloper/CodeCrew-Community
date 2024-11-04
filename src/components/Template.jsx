@@ -16,7 +16,7 @@ const Template = ({ title, desc1, desc2, image, formtype, setIsLoggedIn }) => {
 
   return (
     <div className="flex flex-col-reverse md:flex-row w-11/12 max-w-[1200px] py-12 mx-auto gap-y-8 md:gap-y-0 gap-x-12 justify-between">
-      <div className="w-11/12 max-w-[450px] mx-auto text-white">
+      <div className="w-11/12 max-w-[500px] mx-auto text-white">
         <h1 className="text-richblack-5 font-semibold text-[1.875rem] leading-[2.375rem]">
           {title}
         </h1>
@@ -49,7 +49,7 @@ const Template = ({ title, desc1, desc2, image, formtype, setIsLoggedIn }) => {
         </button>
       </div>
 
-      <div className="relative w-11/12 max-w-[450px] mx-auto mt-6 md:mt-0">
+      <div className="relative w-11/12 max-w-[500px] mx-auto mt-6 md:mt-0">
         <img
           src={frame}
           alt="patter"
